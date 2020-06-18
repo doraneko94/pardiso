@@ -18,8 +18,8 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [badges]
-appveyor = { repository = "doraneko94/pardiso-src" }
-travis-ci = { repository = "doraneko94/pardiso-src" }
+appveyor = { repository = "doraneko94/pardiso" }
+travis-ci = { repository = "doraneko94/pardiso" }
 
 [dependencies]
 pardiso-sys = "0.2"

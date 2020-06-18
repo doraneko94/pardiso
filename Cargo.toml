@@ -1,0 +1,32 @@
+[package]
+name = "pardiso"
+version = "0.1.0"
+license = "Apache-2.0/MIT"
+authors = [
+    "Shuntaro Ohno <shuntaro94@gmail.com>"
+]
+description = "The package provides wrappers for PARDISO."
+documentation = "https://docs.rs/pardiso"
+homepage = "https://github.com/doraneko94/pardiso"
+repository = "https://github.com/doraneko94/pardiso"
+readme = "README.md"
+categories = ["api-bindings", "science"]
+keywords = ["linear-algebra"]
+exclude = ["examples/*"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[badges]
+appveyor = { repository = "doraneko94/pardiso-src" }
+travis-ci = { repository = "doraneko94/pardiso-src" }
+
+[dependencies]
+pardiso-sys = "0.2"
+libc = "0.2"
+num-complex = "0.2"
+
+[dev-dependencies]
+pardiso-src = "0.1"
+ndarray = "0.13"
+ndarray-linalg = { version="0.12", features=["intel-mkl"] }
